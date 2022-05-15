@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregistro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>N1-Registro</title>
+</head>
+<body>
+    <div class="registro">
+        <div class="itemregistro">Registro</div>
+        <input class="itemregistro" id='email' type="email" placeholder="E-mail">
+        <input class="itemregistro" id='senha' type="password" placeholder="Senha" name="password" >
+        <input class="itemregistro" id='nome' type="text" placeholder="Nome">
+        <div>Modalidade:</div>
+        <form id="form">
+            <input type="radio" id="velocista" name="fav_model" value="velocista">
+            <label for="velocista">velocista</label>
+            <input type="radio" id="meio-fundista" name="fav_model" value="meio-fundista">
+            <label for="meio-fundista">meio-fundista</label>
+            <input type="radio" id="fundista" name="fav_model" value="fundista">
+            <label for="fundista">fundista</label>
+        </form>
+        <input class="itemregistro" id="botao" type="button" value="Registrar">
+        <a class="itemregistro" href="../login/login.html">Já tem uma conta? Efetuar Login</a>
+    </div>
+    <script src="scriptregistro.js"></script>
+</body>
+</html>

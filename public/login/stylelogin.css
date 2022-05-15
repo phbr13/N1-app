@@ -1,0 +1,59 @@
+body, html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    background: rgb(25,31,62);
+    background: linear-gradient(180deg, rgba(25,31,62,1) 0%, rgba(242,109,32,1) 100%);
+}
+
+.login {
+    background-color: orange;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.itemlogin {
+    padding: 10px;
+}
+
+.login input {
+    outline: none;
+    border-radius: 150px;
+    margin: 5px;
+}
+
+.login div {
+    font: bold 30px;
+}
+
+#email {
+    width: 80%;
+    border-color: transparent;
+    background-color: #eaeaea;
+}
+
+#senha {
+    width: 80%;
+    border-color: transparent;
+    background-color: #eaeaea;
+}
+
+#botao {
+    width: 50%;
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: transparent;
+    font: bold 15px;
+    text-shadow: none;
+}

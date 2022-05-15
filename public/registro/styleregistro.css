@@ -1,0 +1,80 @@
+body, html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    background: rgb(25,31,62);
+    background: linear-gradient(180deg, rgba(25,31,62,1) 0%, rgba(242,109,32,1) 100%);
+}
+
+.registro {
+    background-color: orange;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.itemregistro {
+    padding: 10px;
+}
+
+.registro input {
+    outline: none;
+    border-radius: 150px;
+    margin: 5px;
+}
+
+.registro div {
+    font: bold 30px;
+}
+
+#email {
+    width: 80%;
+    border-color: transparent;
+    background-color: #eaeaea;
+}
+
+#senha {
+    width: 80%;
+    border-color: transparent;
+    background-color: #eaeaea;
+}
+
+#nome {
+    width: 80%;
+    border-color: transparent;
+    background-color: #eaeaea;
+}
+
+.registro form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.registro form label {
+    margin-bottom: 3px;
+}
+
+.registro form input {
+    margin-left: 10px;
+}
+
+#botao {
+    width: 50%;
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: transparent;
+    font: bold 15px;
+    text-shadow: none;
+}

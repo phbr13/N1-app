@@ -1,0 +1,15 @@
+{
+    "name": "Monitoramento N1",
+    "short_name": "Monitoramento N1",
+    "theme_color": "#f26d20",
+    "background_color": "#f26d20",
+    "display": "standalone",
+    "start_url": ".",
+    "icons": [
+        {
+            "src": "img/icon-512x512-2.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

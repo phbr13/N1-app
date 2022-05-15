@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/logo-n1.ico" type="image/x-icon">
+    <title>N1-natação</title>
+</head>
+<body id="body">
+    <section id="section">
+        <div class="fundo">
+
+        </div>
+        <nav>
+            <ul class="conteudomenu" id="conteudomenu">
+                <div class="itemlista" style="margin-top: 20px;"><b>Pedro Henrique</b></div>
+                <div class="itemlista" >velocista</div>
+                <hr class="itemlista">
+                <li class="itemlista">
+                    <img class="icone" src="img/icons/engrenagem.svg" alt="engrenagem">
+                    <div>Configurações</div>
+                </li>
+                <li class="itemlista">
+                    <img class="icone" src="img/icons/compartilhar.svg" alt="share">
+                    <div>Compartilhar</div>
+                </li>
+                <li class="itemlista" id="tema">
+                    <img id="temaimg" src="img/sol.svg" alt="sol">
+                    <div id="tematxt">Tema Claro</div>
+                </li>
+                <!-- <div class="itemlista" id="ph"><a href="https://www.instagram.com/phborges._/">desenvolvedor:<b>ph</b></a></div> -->
+                <div class="itemlista" id="ph">desenvolvedor:<b>ph</b></div>
+            </ul>
+        </nav>
+        <header>
+            <div class="menu" id="fundomenu">
+                <img src="img/menu.svg" alt="Menu" width="45" id="menuimg">
+            </div>
+            <img src="img/logo-n1.svg" alt="Header" width="100%" id="logo">
+        </header>
+        <main id="corpo">
+            <div class="buttons">
+                <div class="button" id="sexo">
+                    <img src="img/matinal.svg" alt="matinal" width="66%">
+                    Manhã
+                </div>
+                <div class="button">
+                    <img src="img/treino.svg" alt="treino" width="66%">
+                    Pós-Treino
+                </div>
+                <div class="button">
+                    <img src="img/dados.svg" alt="dados" width="66%">
+                    Histórico
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <img src="img/nutricao.svg" alt="nutricao" width="66%">
+                    Nutrição
+                </div>
+                <div class="button">
+                    <img src="img/admin.svg" alt="admin" width="66%">
+                    Admin
+                </div>
+                <div class="button">
+                    <img src="img/treinos.svg" alt="treinos" width="66%">
+                    Treinos
+                </div>
+            </div>
+            <div class="mensagens">
+                <h2 id="titulo">Mensagens do Administrador:</h2>
+                <div class="mensagem">
+                    <div class="icon">
+                        <img src="img/chat.svg" alt="chat" width="45">
+                    </div>
+                    <div class="info">
+                        <div class="nome">Douglas</div>
+                        <div class="content">Respondam a PSE por favor</div>
+                        <div class="link">link</div>
+                    </div>
+                </div>
+                <div class="mensagem">
+                    <div class="icon">
+                        <img src="img/chatzul.svg" alt="chat" width="45">
+                    </div>
+                    <div class="info">
+                        <div class="nome">Rodrigo</div>
+                        <div class="content">Treino amanhã 8:00</div>
+                        <div class="linkzul">link</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script>
+        window.addEventListener('load', () => {
+            registerSW()
+        })
+
+        async function registerSW() {
+            if("serviceWorker" in navigator) {
+                try{
+                    await navigator.serviceWorker.register('./sw.js')
+                } catch(e) {
+                    console.log('SW resgitration failed')
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
